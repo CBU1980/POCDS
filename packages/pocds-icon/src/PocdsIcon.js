@@ -5,14 +5,16 @@ export class PocdsIcon extends LitElement {
   static get styles() {
     return css`
       :host {
-        --fill: var(--pocds-icon-fill, tomato);
+        --fill: var(--pocds-icon-fill, #000);
       }
 
       svg {
-        fill: var(--fill);
+        fill: var(--fill) !important;
       }
     `;
   }
+
+  // fill could be a property as well
 
   static get properties() {
     return {

@@ -5,8 +5,8 @@
   "module": "build/icons.js",
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/npm-run-all copy svgo build",
-    "build": "node ./src/scripts/build.js",
+    "build": "node_modules/.bin/npm-run-all copy svgo transform",
+    "transform": "node ./src/scripts/build.js",
     "svgo": "node_modules/.bin/svgo -f ./build/assets",
     "copy": "node_modules/.bin/copyfiles --up 1 \"./src/assets/*\" \"./build\"",
     "clean": "rm -rf build",

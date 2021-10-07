@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 07 Oct 2021 18:28:27 GMT
+ */
+
+:root {
+  --pocds-typography-brand-family-base: system-ui, -apple-system, sans-serif;
+  --pocds-typography-family-base: system-ui, -apple-system, sans-serif;
+  --pocds-typography-weight-normal: 400;
+  --pocds-typography-weight-semibold: 600;
+  --pocds-typography-weight-bold: 700;
+  --pocds-typography-weight-extra-bold: 800;
+}

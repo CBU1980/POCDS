@@ -4,7 +4,6 @@ const prefix = "pocds";
 
 function getStyleDictionaryConfig(brand, tokens) {
   // Pixels to rems
-
   StyleDictionaryPackage.registerTransform({
     name: "size/rem",
     type: "value",
@@ -17,7 +16,6 @@ function getStyleDictionaryConfig(brand, tokens) {
   });
 
   // Custom format
-
   StyleDictionaryPackage.registerFormat({
     name: "custom/cjsmodule",
     formatter: function ({ dictionary }) {

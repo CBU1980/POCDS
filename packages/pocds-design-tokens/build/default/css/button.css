@@ -1,0 +1,14 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 07 Oct 2021 18:28:27 GMT
+ */
+
+:root {
+  --pocds-button-font-family: system-ui, -apple-system, sans-serif;
+  --pocds-button-font-size: 1rem;
+  --pocds-button-background-color: #7a28cb;
+  --pocds-button-background-color-hover: #494368;
+  --pocds-button-text-color: #FFFFFF;
+  --pocds-button-padding: 0.5rem 1rem;
+  --pocds-button-radius: 0.25rem;
+}
