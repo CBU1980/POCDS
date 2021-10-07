@@ -1,0 +1,10 @@
+{
+  "icons": [
+    { "title": "checkmark", "description": "Something here" },
+    { "title": "arrow-left", "description": "something here" },
+    { "title": "arrow-right", "description": "Something here" },
+    { "title": "cross", "description": "Something here" },
+    { "title": "user", "description": "Something here" },
+    { "title": "plus 1", "description": "Something here" }
+  ]
+}

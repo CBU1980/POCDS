@@ -1,0 +1,29 @@
+{
+  "heading": {
+    "font": {
+      "family": {
+        "value": "{typography.family.base.value}"
+      }
+    },
+    "size": {
+      "level-1": {
+        "value": "{fontSize.size.800.value}"
+      },
+      "level-2": {
+        "value": "{fontSize.size.700.value}"
+      },
+      "level-3": {
+        "value": "{fontSize.size.600.value}"
+      },
+      "level-4": {
+        "value": "{fontSize.size.500.value}"
+      },
+      "level-5": {
+        "value": "{fontSize.size.400.value}"
+      },
+      "level-6": {
+        "value": "{fontSize.size.300.value}"
+      }
+    }
+  }
+}

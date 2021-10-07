@@ -1,0 +1,69 @@
+<div class="app">
+  <header class="app-header">
+    <a class="app-header__logo" routerLink="/">Example app</a>
+    <nav class="app-header__nav">
+      <ul class="app-header__menu">
+        <li>
+          <a
+            routerLink="/about"
+            class="app-header__link"
+            routerLinkActive="is-active"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="#"
+            class="app-header__link"
+            routerLinkActive="is-active"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="#"
+            class="app-header__link"
+            routerLinkActive="is-active"
+            >Careers</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="app-footer">
+    <h2 class="app-footer__heading">Example app</h2>
+    <nav class="app-footer__nav">
+      <ul class="app-footer__menu">
+        <li>
+          <a
+            routerLink="/about"
+            class="app-footer__link"
+            routerLinkActive="is-active"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="#"
+            class="app-footer__link"
+            routerLinkActive="is-active"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="#"
+            class="app-footer__link"
+            routerLinkActive="is-active"
+            >Careers</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</div>

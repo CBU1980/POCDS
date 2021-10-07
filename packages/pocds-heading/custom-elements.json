@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PocdsHeading",
+          "declaration": {
+            "name": "PocdsHeading",
+            "module": "./src/PocdsHeading.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "pocds-heading.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "pocds-heading",
+          "declaration": {
+            "name": "PocdsHeading",
+            "module": "/src/PocdsHeading.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/PocdsHeading.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "PocdsHeading",
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "pocds-heading",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "PocdsHeading",
+          "declaration": {
+            "name": "PocdsHeading",
+            "module": "src/PocdsHeading.js"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+@import "pocds-design-tokens/build/default/css/tokens";
+
+body {
+  margin: 0;
+  font-family: var(--pocds-typography-family-base);
+}
+
+h1 {
+  font-size: var(--pocds-font-size-size-800);
+}
+
+h2 {
+  font-size: var(--pocds-font-size-size-600);
+}
+
+h3 {
+  font-size: var(--pocds-font-size-size-500);
+}
+
+.app-container {
+  margin: var(--pocds-space-size-700) auto;
+  max-width: 60em;
+  padding: var(--pocds-space-size-400); /* Use token value from design system */
+}

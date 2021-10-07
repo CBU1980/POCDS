@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        padding: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script type="module">
+      import { html, render } from 'lit';
+      import '../pocds-icon.js';
+
+      render(
+        html` <pocds-icon title="cross"></pocds-icon>`,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>

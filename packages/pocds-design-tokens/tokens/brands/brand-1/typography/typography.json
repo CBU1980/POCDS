@@ -1,0 +1,11 @@
+{
+  "typography": {
+    "brand": {
+      "family": {
+        "base": {
+          "value": "Georgia"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        padding: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script type="module">
+      import { html, render } from 'lit';
+      import '../pocds-card.js';
+
+      render(
+        html` <pocds-card title="This is a card">
+          <img
+            slot="image"
+            src="https://placehold.co/640x360?text=Card+image"
+            alt="Beautiful placeholder"
+          />
+          This is just plain text.
+          <a slot="footer" href="https://google.com">Go to about Google</a>
+        </pocds-card>`,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>

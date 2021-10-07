@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        padding: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script type="module">
+      import { html, render } from 'lit';
+      import '../pocds-button.js';
+
+      render(
+        html` <pocds-button> some light-dom </pocds-button> `,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>

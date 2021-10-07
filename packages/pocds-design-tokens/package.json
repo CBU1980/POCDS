@@ -1,0 +1,14 @@
+{
+  "name": "pocds-design-tokens",
+  "version": "0.0.0",
+  "main": "build/js/tokens.js",
+  "module": "build/js/tokens.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./build.js",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.0.2"
+  }
+}

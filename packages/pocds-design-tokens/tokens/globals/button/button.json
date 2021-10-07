@@ -1,0 +1,31 @@
+{
+  "button": {
+    "font": {
+      "family": {
+        "value": "{typography.family.base.value}"
+      },
+      "size": {
+        "value": "{fontSize.size.300.value}"
+      }
+    },
+    "background": {
+      "color": {
+        "value": "{color.primary.value}"
+      },
+      "color-hover": {
+        "value": "{color.secondary.value}"
+      }
+    },
+    "text": {
+      "color": {
+        "value": "#FFFFFF"
+      }
+    },
+    "padding": {
+      "value": "{space.size.300.value} {space.size.400.value}"
+    },
+    "radius": {
+      "value": "{space.size.200.value}"
+    }
+  }
+}

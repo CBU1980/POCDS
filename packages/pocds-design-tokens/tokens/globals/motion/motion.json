@@ -1,0 +1,9 @@
+{
+  "motion": {
+    "duration": {
+      "fast": { "value": ".15s" },
+      "medium": { "value": ".3s" },
+      "slow": { "value": ".6s" }
+    }
+  }
+}
