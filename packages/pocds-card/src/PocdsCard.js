@@ -2,7 +2,8 @@ import { html, css, LitElement, unsafeCSS } from 'lit';
 import {
   POCDS_CARD_FONT_FAMILY,
   POCDS_CARD_HEADING_SIZE,
-  POCDS_CARD_SPACE,
+  POCDS_CARD_SPACE_MIN,
+  POCDS_CARD_SPACE_MAX,
   POCDS_CARD_LINK_COLOR,
   POCDS_CARD_LINK_HOVER,
   POCDS_CARD_ELEVATION,
@@ -12,8 +13,17 @@ export class PocdsCard extends LitElement {
   static get styles() {
     return css`
       :host {
-        --space: var(--pocds-card-space, ${unsafeCSS(POCDS_CARD_SPACE)});
-        --fontFamily: var(
+        --space-min: var(
+          --pocds-card-space-min,
+          ${unsafeCSS(POCDS_CARD_SPACE_MIN)}
+        );
+        --space-max: var(
+          --pocds-card-space-max,
+          ${unsafeCSS(POCDS_CARD_SPACE_MAX)}
+        );
+        /* trying out responsive spacing without media queries */
+        --space: clamp(var(--space-min), 5%, var(--space-max));
+        --font-family: var(
           --pocds-card-font-family,
           ${unsafeCSS(POCDS_CARD_FONT_FAMILY)}
         );
@@ -22,12 +32,12 @@ export class PocdsCard extends LitElement {
           ${unsafeCSS(POCDS_CARD_HEADING_SIZE)}
         );
 
-        --linkColor: var(
+        --link-color: var(
           --pocds-card-link-color,
           ${unsafeCSS(POCDS_CARD_LINK_COLOR)}
         );
 
-        --linkColorHover: var(
+        --link-color-hover: var(
           --pocds-card-link-hover,
           ${unsafeCSS(POCDS_CARD_LINK_HOVER)}
         );
@@ -37,7 +47,7 @@ export class PocdsCard extends LitElement {
           ${unsafeCSS(POCDS_CARD_ELEVATION)}
         );
 
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
       }
 
       .pocds-card {
@@ -60,21 +70,21 @@ export class PocdsCard extends LitElement {
         max-width: 100%;
         display: block;
         width: 100%;
-        color: var(--linkColor);
+        color: var(--link-color);
         font-weight: bold;
       }
 
       .pocds-card ::slotted(a:hover) {
-        color: var(--linkColorHover);
+        color: var(--link-color-hover);
       }
 
       .pocds-card__heading {
-        margin: 0 0 var(--space);
+        margin: 0 0 var(--space-min);
         font-size: var(--heading);
       }
 
       .pocds-card__text {
-        margin-bottom: var(--space);
+        margin-bottom: var(--space-min);
       }
 
       .pocds-card__body {

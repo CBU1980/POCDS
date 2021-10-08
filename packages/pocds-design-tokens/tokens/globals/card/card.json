@@ -11,7 +11,12 @@
       }
     },
     "space": {
-      "value": "{space.size.450.value}"
+      "min": {
+        "value": "{space.size.450.value}"
+      },
+      "max": {
+        "value": "{space.size.600.value}"
+      }
     },
     "link": {
       "color": {

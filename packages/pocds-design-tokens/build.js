@@ -15,7 +15,7 @@ function getStyleDictionaryConfig(brand, tokens) {
     },
   });
 
-  // Custom format
+  // Custom format for documentation purposes
   StyleDictionaryPackage.registerFormat({
     name: "custom/cjsmodule",
     formatter: function ({ dictionary }) {

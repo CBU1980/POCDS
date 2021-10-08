@@ -100,8 +100,12 @@ export const items = [
         value: "1.125rem",
       },
       {
-        name: "pocds-card-space",
+        name: "pocds-card-space-min",
         value: "1.5rem",
+      },
+      {
+        name: "pocds-card-space-max",
+        value: "2.5rem",
       },
       {
         name: "pocds-card-link-color",
