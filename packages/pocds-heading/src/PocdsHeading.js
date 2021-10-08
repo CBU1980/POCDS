@@ -14,37 +14,37 @@ export class PocdsHeading extends LitElement {
   static get styles() {
     return css`
       :host {
-        --fontFamily: var(
+        --font-family: var(
           --pocds-heading-font-family,
           ${unsafeCSS(POCDS_HEADING_FONT_FAMILY)}
         );
-        --level1Size: var(
+        --level-1-size: var(
           --pocds-heading-size-level-1,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_1)}
         );
-        --level2Size: var(
+        --level-2-size: var(
           --pocds-heading-size-level-2,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_2)}
         );
-        --level3Size: var(
+        --level-3-size: var(
           --pocds-heading-size-level-3,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_3)}
         );
-        --level4Size: var(
+        --level-4-size: var(
           --pocds-heading-size-level-4,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_4)}
         );
-        --level5Size: var(
+        --level-5-size: var(
           --pocds-heading-size-level-5,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_5)}
         );
-        --level6Size: var(
+        --level-6-size: var(
           --pocds-heading-size-level-6,
           ${unsafeCSS(POCDS_HEADING_SIZE_LEVEL_6)}
         );
         --margin: var(--pocds-heading-margin, 0);
 
-        font-family: var(--fontFamily);
+        font-family: var(--font-family);
       }
 
       .pocds-heading {
@@ -53,27 +53,27 @@ export class PocdsHeading extends LitElement {
       }
 
       h1 {
-        font-size: var(--level1Size);
+        font-size: var(--level-1-size);
       }
 
       h2 {
-        font-size: var(--level2Size);
+        font-size: var(--level-2-size);
       }
 
       h3 {
-        font-size: var(--level3Size);
+        font-size: var(--level-3-size);
       }
 
       h4 {
-        font-size: var(--level4Size);
+        font-size: var(--level-4-size);
       }
 
       h5 {
-        font-size: var(--level5Size);
+        font-size: var(--level-5-size);
       }
 
       h6 {
-        font-size: var(--level6Size);
+        font-size: var(--level-6-size);
       }
     `;
   }

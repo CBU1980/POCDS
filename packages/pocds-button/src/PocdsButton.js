@@ -13,11 +13,11 @@ export class PocdsButton extends LitElement {
   static get styles() {
     return css`
       :host {
-        --fontFamily: var(
+        --font-family: var(
           --pocds-button-font-family,
           ${unsafeCSS(POCDS_BUTTON_FONT_FAMILY)}
         );
-        --fontSize: var(
+        --font-size: var(
           --pocds-button-font-size,
           ${unsafeCSS(POCDS_BUTTON_FONT_SIZE)}
         );
@@ -34,7 +34,7 @@ export class PocdsButton extends LitElement {
           ${unsafeCSS(POCDS_BUTTON_PADDING)}
         );
         --radius: var(--pocds-button-radius, ${unsafeCSS(POCDS_BUTTON_RADIUS)});
-        --textColor: var(
+        --text-color: var(
           --pocds-button-text-color,
           ${unsafeCSS(POCDS_BUTTON_TEXT_COLOR)}
         );
@@ -48,8 +48,8 @@ export class PocdsButton extends LitElement {
         border: 0;
         border-radius: var(--radius);
         cursor: pointer;
-        font-family: var(--fontFamily);
-        font-size: var(--fontSize);
+        font-family: var(--font-family);
+        font-size: var(--font-size);
       }
 
       .pocds-button:hover {
