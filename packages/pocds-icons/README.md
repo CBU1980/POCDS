@@ -18,7 +18,7 @@ yarn build
 
 ## Config
 
-First create a config file ìcons.config.json`, then add your token, file id, frame, path for icons and page.
+First create a config file `icons.config.json`, then add your token, file id, frame, path for icons and page.
 
 ```
 {
