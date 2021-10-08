@@ -10,7 +10,7 @@ yarn import-icons
 
 ## Build
 
-Minifies and creates a JS module from SVGs. Build files are in git for demo purposes.
+Minifies SVGS and creates a JS modules. Build files are in git for demo purposes.
 
 ```
 yarn build
@@ -18,7 +18,7 @@ yarn build
 
 ## Config
 
-First create a config file ìcons.config.json`, then add your token, file id, frame, path for icons and page.
+First create a config file `icons.config.json`, then add your token, file id, frame, path for icons and page.
 
 ```
 {
