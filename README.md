@@ -6,6 +6,7 @@ A prototype for testing design system with web components and design tokens.
 
 * Testing web components accessibility – shadow dom, accessibility tree
 * Testing design tokens with Style dictionary
+* Testing fetching icons from Figma works.
 
 ## Install
 
