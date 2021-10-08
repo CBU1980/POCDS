@@ -10,7 +10,7 @@ yarn import-icons
 
 ## Build
 
-Minifies and creates a JS module from SVGs. Build files are in git for demo purposes.
+Minifies SVGS and creates a JS modules. Build files are in git for demo purposes.
 
 ```
 yarn build
