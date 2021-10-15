@@ -1,0 +1,33 @@
+{
+  "card": {
+    "font": {
+      "family": {
+        "value": "{typography.family.base.value}"
+      }
+    },
+    "heading": {
+      "size": {
+        "value": "{card.brand.heading.size.value}"
+      }
+    },
+    "space": {
+      "min": {
+        "value": "{space.size.450.value}"
+      },
+      "max": {
+        "value": "{space.size.600.value}"
+      }
+    },
+    "link": {
+      "color": {
+        "value": "{color.primary.value}"
+      },
+      "hover": {
+        "value": "{color.secondary.value}"
+      }
+    },
+    "elevation": {
+      "value": "{elevation.default.value}"
+    }
+  }
+}

@@ -1,0 +1,1248 @@
+{
+  "card": {
+    "brand": {
+      "heading": {
+        "size": {
+          "value": 18,
+          "filePath": "tokens/brands/default/card/card.json",
+          "isSource": true,
+          "original": {
+            "value": "{fontSize.size.400.value}"
+          },
+          "name": "card-brand-heading-size",
+          "attributes": {
+            "category": "card",
+            "type": "brand",
+            "item": "heading",
+            "subitem": "size"
+          },
+          "path": [
+            "card",
+            "brand",
+            "heading",
+            "size"
+          ]
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "value": "system-ui, -apple-system, sans-serif",
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{typography.family.base.value}"
+        },
+        "name": "card-font-family",
+        "attributes": {
+          "category": "card",
+          "type": "font",
+          "item": "family"
+        },
+        "path": [
+          "card",
+          "font",
+          "family"
+        ]
+      }
+    },
+    "heading": {
+      "size": {
+        "value": 18,
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{card.brand.heading.size.value}"
+        },
+        "name": "card-heading-size",
+        "attributes": {
+          "category": "card",
+          "type": "heading",
+          "item": "size"
+        },
+        "path": [
+          "card",
+          "heading",
+          "size"
+        ]
+      }
+    },
+    "space": {
+      "min": {
+        "value": 24,
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{space.size.450.value}"
+        },
+        "name": "card-space-min",
+        "attributes": {
+          "category": "card",
+          "type": "space",
+          "item": "min"
+        },
+        "path": [
+          "card",
+          "space",
+          "min"
+        ]
+      },
+      "max": {
+        "value": 40,
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{space.size.600.value}"
+        },
+        "name": "card-space-max",
+        "attributes": {
+          "category": "card",
+          "type": "space",
+          "item": "max"
+        },
+        "path": [
+          "card",
+          "space",
+          "max"
+        ]
+      }
+    },
+    "link": {
+      "color": {
+        "value": "#7a28cb",
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{color.primary.value}"
+        },
+        "name": "card-link-color",
+        "attributes": {
+          "category": "card",
+          "type": "link",
+          "item": "color"
+        },
+        "path": [
+          "card",
+          "link",
+          "color"
+        ]
+      },
+      "hover": {
+        "value": "#494368",
+        "filePath": "tokens/components/card/card.json",
+        "isSource": true,
+        "original": {
+          "value": "{color.secondary.value}"
+        },
+        "name": "card-link-hover",
+        "attributes": {
+          "category": "card",
+          "type": "link",
+          "item": "hover"
+        },
+        "path": [
+          "card",
+          "link",
+          "hover"
+        ]
+      }
+    },
+    "elevation": {
+      "value": "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)",
+      "filePath": "tokens/components/card/card.json",
+      "isSource": true,
+      "original": {
+        "value": "{elevation.default.value}"
+      },
+      "name": "card-elevation",
+      "attributes": {
+        "category": "card",
+        "type": "elevation"
+      },
+      "path": [
+        "card",
+        "elevation"
+      ]
+    }
+  },
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "#7a28cb",
+        "filePath": "tokens/brands/default/color/color.json",
+        "isSource": true,
+        "original": {
+          "value": "#7A28CB"
+        },
+        "name": "color-brand-primary",
+        "attributes": {
+          "category": "color",
+          "type": "brand",
+          "item": "primary"
+        },
+        "path": [
+          "color",
+          "brand",
+          "primary"
+        ]
+      },
+      "secondary": {
+        "value": "#494368",
+        "filePath": "tokens/brands/default/color/color.json",
+        "isSource": true,
+        "original": {
+          "value": "#494368"
+        },
+        "name": "color-brand-secondary",
+        "attributes": {
+          "category": "color",
+          "type": "brand",
+          "item": "secondary"
+        },
+        "path": [
+          "color",
+          "brand",
+          "secondary"
+        ]
+      }
+    },
+    "primary": {
+      "value": "#7a28cb",
+      "filePath": "tokens/core/color/color.json",
+      "isSource": true,
+      "original": {
+        "value": "{color.brand.primary.value}"
+      },
+      "name": "color-primary",
+      "attributes": {
+        "category": "color",
+        "type": "primary"
+      },
+      "path": [
+        "color",
+        "primary"
+      ]
+    },
+    "secondary": {
+      "value": "#494368",
+      "filePath": "tokens/core/color/color.json",
+      "isSource": true,
+      "original": {
+        "value": "{color.brand.secondary.value}"
+      },
+      "name": "color-secondary",
+      "attributes": {
+        "category": "color",
+        "type": "secondary"
+      },
+      "path": [
+        "color",
+        "secondary"
+      ]
+    }
+  },
+  "typography": {
+    "brand": {
+      "family": {
+        "base": {
+          "value": "system-ui, -apple-system, sans-serif",
+          "filePath": "tokens/brands/default/typography/typography.json",
+          "isSource": true,
+          "original": {
+            "value": "system-ui, -apple-system, sans-serif"
+          },
+          "name": "typography-brand-family-base",
+          "attributes": {
+            "category": "typography",
+            "type": "brand",
+            "item": "family",
+            "subitem": "base"
+          },
+          "path": [
+            "typography",
+            "brand",
+            "family",
+            "base"
+          ]
+        }
+      }
+    },
+    "family": {
+      "base": {
+        "value": "system-ui, -apple-system, sans-serif",
+        "filePath": "tokens/core/typography/typography.json",
+        "isSource": true,
+        "original": {
+          "value": "{typography.brand.family.base.value}"
+        },
+        "name": "typography-family-base",
+        "attributes": {
+          "category": "typography",
+          "type": "family",
+          "item": "base"
+        },
+        "path": [
+          "typography",
+          "family",
+          "base"
+        ]
+      }
+    },
+    "weight": {
+      "normal": {
+        "value": 400,
+        "filePath": "tokens/core/typography/typography.json",
+        "isSource": true,
+        "original": {
+          "value": 400
+        },
+        "name": "typography-weight-normal",
+        "attributes": {
+          "category": "typography",
+          "type": "weight",
+          "item": "normal"
+        },
+        "path": [
+          "typography",
+          "weight",
+          "normal"
+        ]
+      },
+      "semibold": {
+        "value": 600,
+        "filePath": "tokens/core/typography/typography.json",
+        "isSource": true,
+        "original": {
+          "value": 600
+        },
+        "name": "typography-weight-semibold",
+        "attributes": {
+          "category": "typography",
+          "type": "weight",
+          "item": "semibold"
+        },
+        "path": [
+          "typography",
+          "weight",
+          "semibold"
+        ]
+      },
+      "bold": {
+        "value": 700,
+        "filePath": "tokens/core/typography/typography.json",
+        "isSource": true,
+        "original": {
+          "value": 700
+        },
+        "name": "typography-weight-bold",
+        "attributes": {
+          "category": "typography",
+          "type": "weight",
+          "item": "bold"
+        },
+        "path": [
+          "typography",
+          "weight",
+          "bold"
+        ]
+      },
+      "extra bold": {
+        "value": 800,
+        "filePath": "tokens/core/typography/typography.json",
+        "isSource": true,
+        "original": {
+          "value": 800
+        },
+        "name": "typography-weight-extra-bold",
+        "attributes": {
+          "category": "typography",
+          "type": "weight",
+          "item": "extra bold"
+        },
+        "path": [
+          "typography",
+          "weight",
+          "extra bold"
+        ]
+      }
+    }
+  },
+  "border": {
+    "size": {
+      "radius": {
+        "400": {
+          "value": 4,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 4
+          },
+          "name": "border-size-radius-400",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "radius",
+            "subitem": "400"
+          },
+          "path": [
+            "border",
+            "size",
+            "radius",
+            "400"
+          ]
+        },
+        "500": {
+          "value": 6,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 6
+          },
+          "name": "border-size-radius-500",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "radius",
+            "subitem": "500"
+          },
+          "path": [
+            "border",
+            "size",
+            "radius",
+            "500"
+          ]
+        },
+        "600": {
+          "value": 8,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 8
+          },
+          "name": "border-size-radius-600",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "radius",
+            "subitem": "600"
+          },
+          "path": [
+            "border",
+            "size",
+            "radius",
+            "600"
+          ]
+        }
+      },
+      "width": {
+        "100": {
+          "value": 1,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 1
+          },
+          "name": "border-size-width-100",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "width",
+            "subitem": "100"
+          },
+          "path": [
+            "border",
+            "size",
+            "width",
+            "100"
+          ]
+        },
+        "200": {
+          "value": 2,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 2
+          },
+          "name": "border-size-width-200",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "width",
+            "subitem": "200"
+          },
+          "path": [
+            "border",
+            "size",
+            "width",
+            "200"
+          ]
+        },
+        "300": {
+          "value": 3,
+          "filePath": "tokens/core/border/border.json",
+          "isSource": true,
+          "original": {
+            "value": 3
+          },
+          "name": "border-size-width-300",
+          "attributes": {
+            "category": "border",
+            "type": "size",
+            "item": "width",
+            "subitem": "300"
+          },
+          "path": [
+            "border",
+            "size",
+            "width",
+            "300"
+          ]
+        }
+      }
+    }
+  },
+  "elevation": {
+    "default": {
+      "value": "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)",
+      "filePath": "tokens/core/elevation/elevation.json",
+      "isSource": true,
+      "original": {
+        "value": "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)"
+      },
+      "name": "elevation-default",
+      "attributes": {
+        "category": "elevation",
+        "type": "default"
+      },
+      "path": [
+        "elevation",
+        "default"
+      ]
+    }
+  },
+  "fontSize": {
+    "size": {
+      "100": {
+        "value": 14,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 14
+        },
+        "name": "font-size-size-100",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "100"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "100"
+        ]
+      },
+      "200": {
+        "value": 15,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 15
+        },
+        "name": "font-size-size-200",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "200"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "200"
+        ]
+      },
+      "300": {
+        "value": 16,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 16
+        },
+        "name": "font-size-size-300",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "300"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "300"
+        ]
+      },
+      "400": {
+        "value": 18,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 18
+        },
+        "name": "font-size-size-400",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "400"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "400"
+        ]
+      },
+      "500": {
+        "value": 21,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 21
+        },
+        "name": "font-size-size-500",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "500"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "500"
+        ]
+      },
+      "600": {
+        "value": 24,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 24
+        },
+        "name": "font-size-size-600",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "600"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "600"
+        ]
+      },
+      "700": {
+        "value": 32,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 32
+        },
+        "name": "font-size-size-700",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "700"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "700"
+        ]
+      },
+      "800": {
+        "value": 43,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 43
+        },
+        "name": "font-size-size-800",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "800"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "800"
+        ]
+      },
+      "900": {
+        "value": 57,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 57
+        },
+        "name": "font-size-size-900",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "900"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "900"
+        ]
+      },
+      "1000": {
+        "value": 76,
+        "filePath": "tokens/core/fontSize/fontSize.json",
+        "isSource": true,
+        "original": {
+          "value": 76
+        },
+        "name": "font-size-size-1000",
+        "attributes": {
+          "category": "fontSize",
+          "type": "size",
+          "item": "1000"
+        },
+        "path": [
+          "fontSize",
+          "size",
+          "1000"
+        ]
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "fast": {
+        "value": ".15s",
+        "filePath": "tokens/core/motion/motion.json",
+        "isSource": true,
+        "original": {
+          "value": ".15s"
+        },
+        "name": "motion-duration-fast",
+        "attributes": {
+          "category": "motion",
+          "type": "duration",
+          "item": "fast"
+        },
+        "path": [
+          "motion",
+          "duration",
+          "fast"
+        ]
+      },
+      "medium": {
+        "value": ".3s",
+        "filePath": "tokens/core/motion/motion.json",
+        "isSource": true,
+        "original": {
+          "value": ".3s"
+        },
+        "name": "motion-duration-medium",
+        "attributes": {
+          "category": "motion",
+          "type": "duration",
+          "item": "medium"
+        },
+        "path": [
+          "motion",
+          "duration",
+          "medium"
+        ]
+      },
+      "slow": {
+        "value": ".6s",
+        "filePath": "tokens/core/motion/motion.json",
+        "isSource": true,
+        "original": {
+          "value": ".6s"
+        },
+        "name": "motion-duration-slow",
+        "attributes": {
+          "category": "motion",
+          "type": "duration",
+          "item": "slow"
+        },
+        "path": [
+          "motion",
+          "duration",
+          "slow"
+        ]
+      }
+    }
+  },
+  "space": {
+    "size": {
+      "100": {
+        "value": 2,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 2
+        },
+        "name": "space-size-100",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "100"
+        },
+        "path": [
+          "space",
+          "size",
+          "100"
+        ]
+      },
+      "200": {
+        "value": 4,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 4
+        },
+        "name": "space-size-200",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "200"
+        },
+        "path": [
+          "space",
+          "size",
+          "200"
+        ]
+      },
+      "300": {
+        "value": 8,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 8
+        },
+        "name": "space-size-300",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "300"
+        },
+        "path": [
+          "space",
+          "size",
+          "300"
+        ]
+      },
+      "350": {
+        "value": 12,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 12
+        },
+        "name": "space-size-350",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "350"
+        },
+        "path": [
+          "space",
+          "size",
+          "350"
+        ]
+      },
+      "400": {
+        "value": 16,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 16
+        },
+        "name": "space-size-400",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "400"
+        },
+        "path": [
+          "space",
+          "size",
+          "400"
+        ]
+      },
+      "450": {
+        "value": 24,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 24
+        },
+        "name": "space-size-450",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "450"
+        },
+        "path": [
+          "space",
+          "size",
+          "450"
+        ]
+      },
+      "500": {
+        "value": 32,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 32
+        },
+        "name": "space-size-500",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "500"
+        },
+        "path": [
+          "space",
+          "size",
+          "500"
+        ]
+      },
+      "600": {
+        "value": 40,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 40
+        },
+        "name": "space-size-600",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "600"
+        },
+        "path": [
+          "space",
+          "size",
+          "600"
+        ]
+      },
+      "700": {
+        "value": 60,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 60
+        },
+        "name": "space-size-700",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "700"
+        },
+        "path": [
+          "space",
+          "size",
+          "700"
+        ]
+      },
+      "800": {
+        "value": 80,
+        "filePath": "tokens/core/space/space.json",
+        "isSource": true,
+        "original": {
+          "value": 80
+        },
+        "name": "space-size-800",
+        "attributes": {
+          "category": "space",
+          "type": "size",
+          "item": "800"
+        },
+        "path": [
+          "space",
+          "size",
+          "800"
+        ]
+      }
+    }
+  },
+  "button": {
+    "font": {
+      "family": {
+        "value": "system-ui, -apple-system, sans-serif",
+        "filePath": "tokens/components/button/button.json",
+        "isSource": true,
+        "original": {
+          "value": "{typography.family.base.value}"
+        },
+        "name": "button-font-family",
+        "attributes": {
+          "category": "button",
+          "type": "font",
+          "item": "family"
+        },
+        "path": [
+          "button",
+          "font",
+          "family"
+        ]
+      },
+      "size": {
+        "value": 16,
+        "filePath": "tokens/components/button/button.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.300.value}"
+        },
+        "name": "button-font-size",
+        "attributes": {
+          "category": "button",
+          "type": "font",
+          "item": "size"
+        },
+        "path": [
+          "button",
+          "font",
+          "size"
+        ]
+      }
+    },
+    "background": {
+      "color": {
+        "value": "#7a28cb",
+        "filePath": "tokens/components/button/button.json",
+        "isSource": true,
+        "original": {
+          "value": "{color.primary.value}"
+        },
+        "name": "button-background-color",
+        "attributes": {
+          "category": "button",
+          "type": "background",
+          "item": "color"
+        },
+        "path": [
+          "button",
+          "background",
+          "color"
+        ]
+      },
+      "color-hover": {
+        "value": "#494368",
+        "filePath": "tokens/components/button/button.json",
+        "isSource": true,
+        "original": {
+          "value": "{color.secondary.value}"
+        },
+        "name": "button-background-color-hover",
+        "attributes": {
+          "category": "button",
+          "type": "background",
+          "item": "color-hover"
+        },
+        "path": [
+          "button",
+          "background",
+          "color-hover"
+        ]
+      }
+    },
+    "text": {
+      "color": {
+        "value": "#FFFFFF",
+        "filePath": "tokens/components/button/button.json",
+        "isSource": true,
+        "original": {
+          "value": "#FFFFFF"
+        },
+        "name": "button-text-color",
+        "attributes": {
+          "category": "button",
+          "type": "text",
+          "item": "color"
+        },
+        "path": [
+          "button",
+          "text",
+          "color"
+        ]
+      }
+    },
+    "padding": {
+      "value": 16,
+      "filePath": "tokens/components/button/button.json",
+      "isSource": true,
+      "original": {
+        "value": "{space.size.300.value} {space.size.400.value}"
+      },
+      "name": "button-padding",
+      "attributes": {
+        "category": "button",
+        "type": "padding"
+      },
+      "path": [
+        "button",
+        "padding"
+      ]
+    },
+    "radius": {
+      "value": 4,
+      "filePath": "tokens/components/button/button.json",
+      "isSource": true,
+      "original": {
+        "value": "{space.size.200.value}"
+      },
+      "name": "button-radius",
+      "attributes": {
+        "category": "button",
+        "type": "radius"
+      },
+      "path": [
+        "button",
+        "radius"
+      ]
+    }
+  },
+  "heading": {
+    "font": {
+      "family": {
+        "value": "system-ui, -apple-system, sans-serif",
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{typography.family.base.value}"
+        },
+        "name": "heading-font-family",
+        "attributes": {
+          "category": "heading",
+          "type": "font",
+          "item": "family"
+        },
+        "path": [
+          "heading",
+          "font",
+          "family"
+        ]
+      }
+    },
+    "size": {
+      "level-1": {
+        "value": 43,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.800.value}"
+        },
+        "name": "heading-size-level-1",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-1"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-1"
+        ]
+      },
+      "level-2": {
+        "value": 32,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.700.value}"
+        },
+        "name": "heading-size-level-2",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-2"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-2"
+        ]
+      },
+      "level-3": {
+        "value": 24,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.600.value}"
+        },
+        "name": "heading-size-level-3",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-3"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-3"
+        ]
+      },
+      "level-4": {
+        "value": 21,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.500.value}"
+        },
+        "name": "heading-size-level-4",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-4"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-4"
+        ]
+      },
+      "level-5": {
+        "value": 18,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.400.value}"
+        },
+        "name": "heading-size-level-5",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-5"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-5"
+        ]
+      },
+      "level-6": {
+        "value": 16,
+        "filePath": "tokens/components/heading/heading.json",
+        "isSource": true,
+        "original": {
+          "value": "{fontSize.size.300.value}"
+        },
+        "name": "heading-size-level-6",
+        "attributes": {
+          "category": "heading",
+          "type": "size",
+          "item": "level-6"
+        },
+        "path": [
+          "heading",
+          "size",
+          "level-6"
+        ]
+      }
+    }
+  }
+}

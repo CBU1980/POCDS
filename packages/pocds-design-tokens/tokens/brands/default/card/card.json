@@ -1,0 +1,11 @@
+{
+  "card": {
+    "brand": {
+      "heading": {
+        "size": {
+          "value": "{fontSize.size.400.value}"
+        }
+      }
+    }
+  }
+}

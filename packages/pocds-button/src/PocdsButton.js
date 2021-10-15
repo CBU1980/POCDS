@@ -7,7 +7,7 @@ import {
   POCDS_BUTTON_FONT_FAMILY,
   POCDS_BUTTON_RADIUS,
   POCDS_BUTTON_FONT_SIZE,
-} from 'pocds-design-tokens/build/default/js/esm/button';
+} from 'pocds-design-tokens/build/default/js/esm/components/button';
 
 export class PocdsButton extends LitElement {
   static get styles() {

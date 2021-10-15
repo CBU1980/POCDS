@@ -7,7 +7,7 @@ import {
   POCDS_CARD_LINK_COLOR,
   POCDS_CARD_LINK_HOVER,
   POCDS_CARD_ELEVATION,
-} from 'pocds-design-tokens/build/default/js/esm/';
+} from 'pocds-design-tokens/build/default/js/esm/components/card';
 
 export class PocdsCard extends LitElement {
   static get styles() {

@@ -1,7 +1,7 @@
 import { html } from "lit";
 import "../../storybook-components/colors";
-import { items as defaultColors } from "pocds-design-tokens/build/default/js/cjs/color";
-import { items as brand1Colors } from "pocds-design-tokens/build/brand-1/js/cjs/color";
+import { items as defaultColors } from "pocds-design-tokens/build/default/js/cjs/core/color";
+import { items as brand1Colors } from "pocds-design-tokens/build/brand-1/js/cjs/core/color";
 
 export default {
   title: "Design Tokens/Colors",

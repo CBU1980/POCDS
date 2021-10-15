@@ -8,7 +8,7 @@ import {
   POCDS_HEADING_SIZE_LEVEL_4,
   POCDS_HEADING_SIZE_LEVEL_5,
   POCDS_HEADING_SIZE_LEVEL_6,
-} from 'pocds-design-tokens/build/default/js/esm/heading';
+} from 'pocds-design-tokens/build/default/js/esm/components/heading';
 
 export class PocdsHeading extends LitElement {
   static get styles() {

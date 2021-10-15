@@ -1,6 +1,6 @@
 import { html } from "lit";
 import "../../storybook-components/typography";
-import { items } from "pocds-design-tokens/build/default/js/cjs/fontSize";
+import { items } from "pocds-design-tokens/build/default/js/cjs/core/fontSize";
 
 export default {
   title: "Design Tokens/Typography",

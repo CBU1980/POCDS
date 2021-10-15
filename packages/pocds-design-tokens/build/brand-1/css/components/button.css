@@ -1,0 +1,14 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 15 Oct 2021 06:34:48 GMT
+ */
+
+:root {
+  --pocds-button-font-family: Georgia;
+  --pocds-button-font-size: 1rem;
+  --pocds-button-background-color: #004fff;
+  --pocds-button-background-color-hover: #31afd4;
+  --pocds-button-text-color: #FFFFFF;
+  --pocds-button-padding: 0.5rem 1rem;
+  --pocds-button-radius: 0.25rem;
+}

@@ -1,5 +1,37 @@
 export const items = [
       {
+        name: "pocds-card-brand-heading-size",
+        value: "1.125rem",
+      },
+      {
+        name: "pocds-card-font-family",
+        value: "system-ui, -apple-system, sans-serif",
+      },
+      {
+        name: "pocds-card-heading-size",
+        value: "1.125rem",
+      },
+      {
+        name: "pocds-card-space-min",
+        value: "1.5rem",
+      },
+      {
+        name: "pocds-card-space-max",
+        value: "2.5rem",
+      },
+      {
+        name: "pocds-card-link-color",
+        value: "#7a28cb",
+      },
+      {
+        name: "pocds-card-link-hover",
+        value: "#494368",
+      },
+      {
+        name: "pocds-card-elevation",
+        value: "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)",
+      },
+      {
         name: "pocds-color-brand-primary",
         value: "#7a28cb",
       },
@@ -64,62 +96,6 @@ export const items = [
         value: "0.1875rem",
       },
       {
-        name: "pocds-button-font-family",
-        value: "system-ui, -apple-system, sans-serif",
-      },
-      {
-        name: "pocds-button-font-size",
-        value: "1rem",
-      },
-      {
-        name: "pocds-button-background-color",
-        value: "#7a28cb",
-      },
-      {
-        name: "pocds-button-background-color-hover",
-        value: "#494368",
-      },
-      {
-        name: "pocds-button-text-color",
-        value: "#FFFFFF",
-      },
-      {
-        name: "pocds-button-padding",
-        value: "0.5rem 1rem",
-      },
-      {
-        name: "pocds-button-radius",
-        value: "0.25rem",
-      },
-      {
-        name: "pocds-card-font-family",
-        value: "system-ui, -apple-system, sans-serif",
-      },
-      {
-        name: "pocds-card-heading-size",
-        value: "1.125rem",
-      },
-      {
-        name: "pocds-card-space-min",
-        value: "1.5rem",
-      },
-      {
-        name: "pocds-card-space-max",
-        value: "2.5rem",
-      },
-      {
-        name: "pocds-card-link-color",
-        value: "#7a28cb",
-      },
-      {
-        name: "pocds-card-link-hover",
-        value: "#494368",
-      },
-      {
-        name: "pocds-card-elevation",
-        value: "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)",
-      },
-      {
         name: "pocds-elevation-default",
         value: "  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)",
       },
@@ -162,34 +138,6 @@ export const items = [
       {
         name: "pocds-font-size-size-1000",
         value: "4.75rem",
-      },
-      {
-        name: "pocds-heading-font-family",
-        value: "system-ui, -apple-system, sans-serif",
-      },
-      {
-        name: "pocds-heading-size-level-1",
-        value: "2.6875rem",
-      },
-      {
-        name: "pocds-heading-size-level-2",
-        value: "2rem",
-      },
-      {
-        name: "pocds-heading-size-level-3",
-        value: "1.5rem",
-      },
-      {
-        name: "pocds-heading-size-level-4",
-        value: "1.3125rem",
-      },
-      {
-        name: "pocds-heading-size-level-5",
-        value: "1.125rem",
-      },
-      {
-        name: "pocds-heading-size-level-6",
-        value: "1rem",
       },
       {
         name: "pocds-motion-duration-fast",
@@ -242,5 +190,61 @@ export const items = [
       {
         name: "pocds-space-size-800",
         value: "5rem",
+      },
+      {
+        name: "pocds-button-font-family",
+        value: "system-ui, -apple-system, sans-serif",
+      },
+      {
+        name: "pocds-button-font-size",
+        value: "1rem",
+      },
+      {
+        name: "pocds-button-background-color",
+        value: "#7a28cb",
+      },
+      {
+        name: "pocds-button-background-color-hover",
+        value: "#494368",
+      },
+      {
+        name: "pocds-button-text-color",
+        value: "#FFFFFF",
+      },
+      {
+        name: "pocds-button-padding",
+        value: "0.5rem 1rem",
+      },
+      {
+        name: "pocds-button-radius",
+        value: "0.25rem",
+      },
+      {
+        name: "pocds-heading-font-family",
+        value: "system-ui, -apple-system, sans-serif",
+      },
+      {
+        name: "pocds-heading-size-level-1",
+        value: "2.6875rem",
+      },
+      {
+        name: "pocds-heading-size-level-2",
+        value: "2rem",
+      },
+      {
+        name: "pocds-heading-size-level-3",
+        value: "1.5rem",
+      },
+      {
+        name: "pocds-heading-size-level-4",
+        value: "1.3125rem",
+      },
+      {
+        name: "pocds-heading-size-level-5",
+        value: "1.125rem",
+      },
+      {
+        name: "pocds-heading-size-level-6",
+        value: "1rem",
       }
 ];

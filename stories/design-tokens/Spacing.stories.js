@@ -1,6 +1,6 @@
 import { html } from "lit";
 import "../../storybook-components/spacing";
-import { items } from "pocds-design-tokens/build/default/js/cjs/space";
+import { items } from "pocds-design-tokens/build/default/js/cjs/core/space";
 
 export default {
   title: "Design Tokens/Space",

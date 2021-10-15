@@ -1,57 +1,44 @@
 const StyleDictionaryPackage = require("style-dictionary");
-const tokens = require("./tokens/globals");
+const core = require("./tokens/core");
+const components = require("./tokens/components");
 const prefix = "pocds";
 
-function getStyleDictionaryConfig(brand, tokens) {
-  // Pixels to rems
-  StyleDictionaryPackage.registerTransform({
-    name: "size/rem",
-    type: "value",
-    matcher: function (token) {
-      return token.attributes.type === "size";
-    },
-    transformer: function (token) {
-      return (parseInt(token.original.value) / 16).toString() + "rem";
-    },
-  });
+// Pixels to rems
+StyleDictionaryPackage.registerTransform({
+  name: "size/rem",
+  type: "value",
+  matcher: function (token) {
+    return token.attributes.type === "size";
+  },
+  transformer: function (token) {
+    return (parseInt(token.original.value) / 16).toString() + "rem";
+  },
+});
 
-  // Custom format for documentation purposes
-  StyleDictionaryPackage.registerFormat({
-    name: "custom/cjsmodule",
-    formatter: function ({ dictionary }) {
-      return `export const items = [${dictionary.allTokens.map(
-        (token) => `
+// Custom format for documentation purposes
+StyleDictionaryPackage.registerFormat({
+  name: "custom/cjsmodule",
+  formatter: function ({ dictionary }) {
+    return `export const items = [${dictionary.allTokens.map(
+      (token) => `
       {
         name: "${token.name}",
         value: "${token.value}",
       }`
-      )}\n];`;
-    },
-  });
+    )}\n];`;
+  },
+});
 
+function getStyleDictionaryConfig(brand, core, components) {
   return {
-    source: [`tokens/brands/${brand}/**/*.json`, "tokens/globals/**/*.json"],
+    source: [
+      `tokens/brands/${brand}/**/*.json`,
+      "tokens/core/**/*.json",
+      "tokens/components/**/*.json",
+    ],
     platforms: {
-      esmcategory: {
-        buildPath: `build/${brand}/js/esm/`,
-        prefix: prefix,
-        transforms: [
-          "attribute/cti",
-          "name/cti/constant",
-          "size/rem",
-          "color/hex",
-        ],
-        files: tokens.map((tokenCategory) => ({
-          destination: `${tokenCategory}.js`,
-          format: "javascript/es6",
-          filter: {
-            attributes: {
-              category: tokenCategory,
-            },
-          },
-        })),
-      },
-      esmindex: {
+      // ESM index
+      esmIndex: {
         buildPath: `build/${brand}/js/esm/`,
         prefix: prefix,
         transforms: [
@@ -67,26 +54,48 @@ function getStyleDictionaryConfig(brand, tokens) {
           },
         ],
       },
-      cjscategory: {
-        buildPath: `build/${brand}/js/cjs/`,
+      // ESM single category
+      esmCategory: {
+        buildPath: `build/${brand}/js/esm/`,
         prefix: prefix,
         transforms: [
           "attribute/cti",
-          "name/cti/kebab",
+          "name/cti/constant",
           "size/rem",
           "color/hex",
         ],
-        files: tokens.map((tokenCategory) => ({
-          destination: `${tokenCategory}.js`,
-          format: "custom/cjsmodule",
+        files: core.map((category) => ({
+          destination: `core/${category}.js`,
+          format: "javascript/es6",
           filter: {
             attributes: {
-              category: tokenCategory,
+              category: category,
             },
           },
         })),
       },
-      cjsindex: {
+      // ESM single component
+      esmComponent: {
+        buildPath: `build/${brand}/js/esm/`,
+        prefix: prefix,
+        transforms: [
+          "attribute/cti",
+          "name/cti/constant",
+          "size/rem",
+          "color/hex",
+        ],
+        files: components.map((component) => ({
+          destination: `components/${component}.js`,
+          format: "javascript/es6",
+          filter: {
+            attributes: {
+              category: component,
+            },
+          },
+        })),
+      },
+      // CJS index
+      cjsIndex: {
         buildPath: `build/${brand}/js/cjs/`,
         prefix: prefix,
         transforms: [
@@ -102,33 +111,97 @@ function getStyleDictionaryConfig(brand, tokens) {
           },
         ],
       },
-
-      // Web output in css format
-      css: {
+      // CJS single category
+      cjsCategory: {
+        buildPath: `build/${brand}/js/cjs/`,
+        prefix: prefix,
+        transforms: [
+          "attribute/cti",
+          "name/cti/kebab",
+          "size/rem",
+          "color/hex",
+        ],
+        files: core.map((category) => ({
+          destination: `core/${category}.js`,
+          format: "custom/cjsmodule",
+          filter: {
+            attributes: {
+              category: category,
+            },
+          },
+        })),
+      },
+      // CJS single component
+      cjsComponent: {
+        buildPath: `build/${brand}/js/cjs/`,
+        prefix: prefix,
+        transforms: [
+          "attribute/cti",
+          "name/cti/kebab",
+          "size/rem",
+          "color/hex",
+        ],
+        files: components.map((component) => ({
+          destination: `components/${component}.js`,
+          format: "custom/cjsmodule",
+          filter: {
+            attributes: {
+              category: component,
+            },
+          },
+        })),
+      },
+      // CSS index
+      cssIndex: {
         transformGroup: "css",
         buildPath: `build/${brand}/css/`,
         prefix: prefix,
         files: [
           {
-            destination: `tokens.css`,
+            destination: `index.css`,
             format: "css/variables",
           },
         ],
       },
-      // Web output in css partialformat
-      csscategory: {
+      // CSS single category
+      cssCategory: {
         transformGroup: "css",
         buildPath: `build/${brand}/css/`,
         prefix: prefix,
-        files: tokens.map((tokenCategory) => ({
-          destination: `${tokenCategory}.css`,
+        files: core.map((category) => ({
+          destination: `core/${category}.css`,
           format: "css/variables",
           filter: {
             attributes: {
-              category: tokenCategory,
+              category: category,
             },
           },
         })),
+      },
+      // CSS single component
+      cssComponent: {
+        transformGroup: "css",
+        buildPath: `build/${brand}/css/`,
+        prefix: prefix,
+        files: components.map((component) => ({
+          destination: `components/${component}.css`,
+          format: "css/variables",
+          filter: {
+            attributes: {
+              category: component,
+            },
+          },
+        })),
+      },
+      json: {
+        transformGroup: "web",
+        buildPath: `build/${brand}/json/`,
+        files: [
+          {
+            destination: "index.json",
+            format: "json",
+          },
+        ],
       },
     },
   };
@@ -136,7 +209,7 @@ function getStyleDictionaryConfig(brand, tokens) {
 
 ["default", "brand-1"].map(function (brand) {
   const StyleDictionary = StyleDictionaryPackage.extend(
-    getStyleDictionaryConfig(brand, tokens)
+    getStyleDictionaryConfig(brand, core, components)
   );
   StyleDictionary.buildAllPlatforms();
 });
