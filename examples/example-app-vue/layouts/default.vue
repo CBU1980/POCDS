@@ -14,7 +14,7 @@ export default {}
 </script>
 
 <style>
-@import 'pocds-design-tokens/build/brand-1/css/tokens';
+@import 'pocds-design-tokens/build/brand-1/css/index';
 
 body {
   margin: 0;
