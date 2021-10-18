@@ -203,6 +203,26 @@ function getStyleDictionaryConfig(brand, core, components) {
           },
         ],
       },
+      ios: {
+        transformGroup: "ios",
+        buildPath: `build/${brand}/ios/`,
+        files: [
+          {
+            destination: "index.h",
+            format: "ios/macros",
+          },
+        ],
+      },
+      android: {
+        transformGroup: "android",
+        buildPath: `build/${brand}/android/`,
+        files: [
+          {
+            destination: "index.xml",
+            format: "android/resources",
+          },
+        ],
+      },
     },
   };
 }

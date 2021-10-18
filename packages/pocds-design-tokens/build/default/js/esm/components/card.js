@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 15 Oct 2021 06:34:47 GMT
+ * Generated on Fri, 15 Oct 2021 06:52:41 GMT
  */
 
 export const POCDS_CARD_BRAND_HEADING_SIZE = "1.125rem";

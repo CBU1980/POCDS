@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Fri, 15 Oct 2021 06:52:41 GMT
+-->
+<resources>
+  <string name="card_brand_heading_size">18</string>
+  <string name="card_font_family">system-ui, -apple-system, sans-serif</string>
+  <string name="card_heading_size">18</string>
+  <string name="card_space_min">24</string>
+  <string name="card_space_max">40</string>
+  <string name="card_link_color">#ff7a28cb</string>
+  <string name="card_link_hover">#ff494368</string>
+  <string name="card_elevation">  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)</string>
+  <color name="color_brand_primary">#ff7a28cb</color>
+  <color name="color_brand_secondary">#ff494368</color>
+  <color name="color_primary">#ff7a28cb</color>
+  <color name="color_secondary">#ff494368</color>
+  <string name="typography_brand_family_base">system-ui, -apple-system, sans-serif</string>
+  <string name="typography_family_base">system-ui, -apple-system, sans-serif</string>
+  <string name="typography_weight_normal">400</string>
+  <string name="typography_weight_semibold">600</string>
+  <string name="typography_weight_bold">700</string>
+  <string name="typography_weight_extra_bold">800</string>
+  <string name="border_size_radius_400">4</string>
+  <string name="border_size_radius_500">6</string>
+  <string name="border_size_radius_600">8</string>
+  <string name="border_size_width_100">1</string>
+  <string name="border_size_width_200">2</string>
+  <string name="border_size_width_300">3</string>
+  <string name="elevation_default">  0 1px 3.6px rgba(0, 0, 0, 0.028), 0 2.6px 10px rgba(0, 0, 0, 0.04),0 6.3px 24.1px rgba(0, 0, 0, 0.052),0 21px 80px rgba(0, 0, 0, 0.08)</string>
+  <string name="font_size_size_100">14</string>
+  <string name="font_size_size_200">15</string>
+  <string name="font_size_size_300">16</string>
+  <string name="font_size_size_400">18</string>
+  <string name="font_size_size_500">21</string>
+  <string name="font_size_size_600">24</string>
+  <string name="font_size_size_700">32</string>
+  <string name="font_size_size_800">43</string>
+  <string name="font_size_size_900">57</string>
+  <string name="font_size_size_1000">76</string>
+  <string name="motion_duration_fast">.15s</string>
+  <string name="motion_duration_medium">.3s</string>
+  <string name="motion_duration_slow">.6s</string>
+  <string name="space_size_100">2</string>
+  <string name="space_size_200">4</string>
+  <string name="space_size_300">8</string>
+  <string name="space_size_350">12</string>
+  <string name="space_size_400">16</string>
+  <string name="space_size_450">24</string>
+  <string name="space_size_500">32</string>
+  <string name="space_size_600">40</string>
+  <string name="space_size_700">60</string>
+  <string name="space_size_800">80</string>
+  <string name="button_font_family">system-ui, -apple-system, sans-serif</string>
+  <string name="button_font_size">16</string>
+  <string name="button_background_color">#ff7a28cb</string>
+  <string name="button_background_color_hover">#ff494368</string>
+  <string name="button_text_color">#FFFFFF</string>
+  <string name="button_padding">16</string>
+  <string name="button_radius">4</string>
+  <string name="heading_font_family">system-ui, -apple-system, sans-serif</string>
+  <string name="heading_size_level_1">43</string>
+  <string name="heading_size_level_2">32</string>
+  <string name="heading_size_level_3">24</string>
+  <string name="heading_size_level_4">21</string>
+  <string name="heading_size_level_5">18</string>
+  <string name="heading_size_level_6">16</string>
+  
+</resources>

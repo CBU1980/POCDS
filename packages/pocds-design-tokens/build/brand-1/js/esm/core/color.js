@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 15 Oct 2021 06:34:48 GMT
+ * Generated on Fri, 15 Oct 2021 06:52:41 GMT
  */
 
 export const POCDS_COLOR_BRAND_PRIMARY = "#004fff";
