@@ -1,0 +1,94 @@
+$vf-colors-map: (
+  green-400: #66bb6a,
+);
+
+@import "../../pocds-design-tokens/build/default/scss/core/color";
+@import "../../pocds-design-tokens/build/default/scss/core/space";
+@import "../../pocds-design-tokens/build/default/scss/core/fontSize";
+
+@mixin color-modifiers($property: "color") {
+  @each $name, $hex in $pocds-tokens-color {
+    &-#{$name} {
+      #{$property}: $hex;
+    }
+  }
+}
+
+.pocds-text {
+  @include color-modifiers();
+}
+
+.pocds-background {
+  @include color-modifiers(background-color);
+}
+
+.pocds-border {
+  @include color-modifiers(border-color);
+}
+
+/* Generated Spacing Utitilty Class */
+
+@mixin spacing-utilities($attribute: "margin", $prefix: "-") {
+  @each $name, $value in $pocds-tokens-space {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $value;
+    }
+  }
+
+  $newattribute: $attribute + "-bottom";
+  @each $name, $value in $pocds-tokens-space {
+    &-bottom#{$prefix}#{$name} {
+      #{$newattribute}: $value;
+    }
+  }
+  $newattribute: $attribute + "-top";
+  @each $name, $value in $pocds-tokens-space {
+    &-top#{$prefix}#{$name} {
+      #{$newattribute}: $value;
+    }
+  }
+
+  $newattribute: $attribute + "-left";
+  @each $name, $value in $pocds-tokens-space {
+    &-left#{$prefix}#{$name} {
+      #{$newattribute}: $value;
+    }
+  }
+
+  $newattribute: $attribute + "-right";
+  @each $name, $value in $pocds-tokens-space {
+    &-right#{$prefix}#{$name} {
+      #{$newattribute}: $value;
+    }
+  }
+}
+
+.pocds-margin {
+  @include spacing-utilities();
+}
+
+.pocds-padding {
+  @include spacing-utilities(padding);
+}
+
+@mixin type-modifiers() {
+  @each $name, $size in $pocds-tokens-fontSize {
+    &-#{$name} {
+      font-size: $size;
+    }
+  }
+}
+
+.pocds-type {
+  @include type-modifiers;
+}
+
+.pocds-visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

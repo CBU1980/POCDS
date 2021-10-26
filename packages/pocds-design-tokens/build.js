@@ -19,6 +19,7 @@ StyleDictionaryPackage.registerTransform({
 StyleDictionaryPackage.registerFormat({
   name: "custom/cjsmodule",
   formatter: function ({ dictionary }) {
+    console.log(dictionary);
     return `export const items = [${dictionary.allTokens.map(
       (token) => `
       {
@@ -193,6 +194,34 @@ function getStyleDictionaryConfig(brand, core, components) {
           },
         })),
       },
+      // SCSS index
+      scssIndex: {
+        transformGroup: "scss",
+        buildPath: `build/${brand}/scss/`,
+        prefix: prefix,
+        files: [
+          {
+            destination: `index.scss`,
+            format: "scss/variables",
+          },
+        ],
+      },
+      // SCSS single category
+      scssCategory: {
+        transformGroup: "scss",
+        buildPath: `build/${brand}/scss/`,
+        files: core.map((category) => ({
+          destination: `core/${category}.scss`,
+          format: "scss/map-flat",
+          mapName: `pocds-tokens-${category}`,
+          filter: {
+            attributes: {
+              category: category,
+            },
+          },
+        })),
+      },
+      // JSON
       json: {
         transformGroup: "web",
         buildPath: `build/${brand}/json/`,

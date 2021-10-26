@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 15 Oct 2021 06:52:40 GMT
+ * Generated on Mon, 25 Oct 2021 08:51:03 GMT
  */
 
 export const POCDS_FONT_SIZE_SIZE_100 = "0.875rem";
